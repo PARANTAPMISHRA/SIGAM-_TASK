@@ -6,7 +6,7 @@ from PIL import Image
 
 def load_data():
 
-    df=pd.read_csv(r'https://github.com/AbhisheakSaraswat/PythonStreamlit/blob/main/Adidas.xlsx')
+    df=pd.read_csv(r'https://github.com/PARANTAPMISHRA/SIGMA_TASK./blob/main/Alpha.csv')
     return df
 df=load_data()
 st.set_page_config(layout='wide',page_title='EDA',page_icon='bar_chart')  
