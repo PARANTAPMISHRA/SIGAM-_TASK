@@ -39,7 +39,7 @@ if uploaded_file is not None:
     
     with col4:
         
-        brand_popularity = df['brand_name'].value_counts().head(10)
+        brand_popularity = df['brand_name'].value_counts().head()
         
         fig7 = px.pie(names=brand_popularity.index, values=brand_popularity.values, 
                     labels={'names': 'Brand Name', 'values': 'Number of Products'}, 
@@ -237,7 +237,7 @@ if uploaded_file is not None:
     
     with col13:
         
-        warehouse = df.groupby('seller_country')['warehouse_name'].agg(lambda x: x.value_counts().idxmax()).reset_index()
+        warehouse = df.groupby('seller_country')['warehouse_name'].value_connts().reset_index()
     
         
         fig = px.choropleth(
