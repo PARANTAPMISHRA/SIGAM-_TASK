@@ -2,14 +2,14 @@ import streamlit as st
 import pandas as pd
 import datetime 
 from PIL import Image
-
+st.set_page_config(layout='wide',page_title='EDA',page_icon='bar_chart') 
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 if uploaded_file is not None:
     
 
     df=pd.read_csv(uploaded_file)
         
-    st.set_page_config(layout='wide',page_title='EDA',page_icon='bar_chart')  
+     
     dataset_size = df.shape[0]
     num_features = df.shape[1]
     num_nan_values = df.isna().sum().sum()
