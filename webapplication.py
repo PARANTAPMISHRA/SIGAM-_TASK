@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import datetime 
 from PIL import Image
+import plotly.express as px
+import plotly.graph_objects as go
+from streamlit_option_menu import option_menu
 st.set_page_config(layout='wide',page_title='EDA',page_icon='bar_chart') 
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 if uploaded_file is not None:
