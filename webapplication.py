@@ -8,7 +8,7 @@ from streamlit_option_menu import option_menu
 
 def load_data():
 
-    df=pd.read_csv(r'Alpha.csv')
+    df=pd.read_csv(r'https://drive.google.com/file/d/10PVYsJbl5m1F1S1LS6LxcmocKGL_gor2/view?usp=sharing')
     return df
 df=load_data()
 st.set_page_config(layout='wide',page_title='EDA',page_icon='bar_chart')  
